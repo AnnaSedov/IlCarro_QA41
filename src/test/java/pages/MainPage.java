@@ -28,6 +28,10 @@ public class MainPage extends BasePage {
                 return (T) new SignUpPage(driver);
             case "LOGIN":
                 return (T) new LoginPage(driver);
+            case "DELETEACCOUNT":
+                return (T) new DeleteAccountPage(driver);
+            case "LOGOUT":
+                return (T) new LogOutPage(driver);
             default:throw new IllegalArgumentException("Wrong page"+topMenuItem);
 
 
